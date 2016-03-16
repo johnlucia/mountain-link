@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby   '2.3.0'
 
 gem 'rails', '4.2.5.2'
 gem 'pg'
@@ -9,6 +10,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'dragonfly-s3_data_store'
+
+gem 'refinerycms-page-images', github: "refinery/refinerycms-page-images", branch: "master"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
