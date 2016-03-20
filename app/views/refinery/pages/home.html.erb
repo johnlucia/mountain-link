@@ -1,1 +1,28 @@
+<div id="carousel">
+  <div id="carousel-example-generic" class="carousel slide gsdk-transition" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <% @page.images.each_with_index do |image, index| %>
+        <li data-target="#carousel-example-generic" data-slide-to="<%= index %>" class="<%= 'active' if index.zero? %>"></li>
+      <% end %>
+    </ol>
+
+    <div class="carousel-inner">
+      <% @page.images.each_with_index do |image, index| %>
+        <div class="item<%= ' active' if index.zero? %>">
+          <%= image_tag image.url %>
+        </div>
+      <% end %>
+    </div>
+
+    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+      <span class="fa fa-angle-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+      <span class="fa fa-angle-right"></span>
+    </a>
+
+  </div>
+</div>
+
 <%= render '/refinery/content_page' %>

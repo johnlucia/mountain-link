@@ -1,7 +1,3 @@
-<!-- <h1 id='logo'>
-  <%= link_to Refinery::Core.site_name, refinery.root_path %>
-</h1> -->
-<%# = Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
 <div id="navbar-full">
   <div id="navbar">
 
@@ -18,29 +14,10 @@
           </button>
           <a class="navbar-brand" href="#">Logo</a>
         </div>
-
-        <%= ct_menu(refinery_menu_pages).to_html %>
-
-        <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page 1 <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Page A</a></li>
-                <li><a href="#">Page B</a></li>
-                <li><a href="#">Page C</a></li>
-                <li><a href="#">Page D</a></li>
-              </ul>
-            </li>
-            <li class="active"><a href="#">Page 2</a></li>
-            <li class="active"><a href="#">Page 3</a></li>
-            <li class="active"><a href="#">Page 4</a></li>
-          </ul>
-        </div> -->
-
-
-      </div><!-- /.container-fluid -->
+        
+        <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
+        
+      </div>
     </nav>
   </div>
 </div>
