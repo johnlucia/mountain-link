@@ -68,7 +68,7 @@ module Refinery
               @cont = context.refinery.url_for(menu_item.url)
               buffer = ActiveSupport::SafeBuffer.new
                   if check_for_dropdown_item(menu_item)
-                      buffer << link_to((menu_item.title+carret).html_safe, "#", link_dropdown_options)
+                      buffer << link_to((menu_item.title+carret).html_safe, context.refinery.url_for(menu_item.url), link_dropdown_options)
                   else
                       buffer << link_to(menu_item.title, context.refinery.url_for(menu_item.url))
                   end
