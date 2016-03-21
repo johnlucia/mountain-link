@@ -36,22 +36,14 @@
       </div>
     </div>
 
-    <div class="space-30"></div>
-
-    <div class="row three-image-links text-center">
-      <div class="col-md-4">
-        <h4>Circle Image</h4>
-        <img src="assets/img/mockup.png" alt="Circle Image" class="img-circle">
+    <% if @page.content_for?(:circles) %>
+      <div class="space-30"></div>
+      <hr>
+      <div class="row three-image-links text-center">
+        <%= raw @page.content_for(:circles) %>
       </div>
-      <div class="col-md-4">
-        <h4>Circle Image</h4>
-        <img src="assets/img/mockup.png" alt="Circle Image" class="img-circle">
-      </div>
-      <div class="col-md-4">
-        <h4>Circle Image</h4>
-        <img src="assets/img/mockup.png" alt="Circle Image" class="img-circle">
-      </div>
-    </div>
+      <hr>
+    <% end %>
     
     <div class="space"></div>
 
