@@ -2,7 +2,17 @@
   <div class="img-src" style="background-image: url('<%= @page.images.first.url if @page.images.any? %>')"></div>
   <div class="img-src blur" style="opacity: 0; background-image: url('<%= @page.images.first.url if @page.images.any? %>');"></div>
 </div>
-
 <div class="main">
-<%= render '/refinery/content_page' %>
+  <div class="space"></div>
+  <div class="container tim-container">
+    <div class="row">
+      <div class="col-md-7">
+        <img src="/assets/img/dulau.jpg" alt="Rounded Image" class="img-rounded">
+        <%= raw @page.content_for(:side_body) %>
+      </div>
+      <div class="col-md-5">
+        <%= raw @page.content_for(:body) %>
+      </div>
+    </div>
+  </div>
 </div>

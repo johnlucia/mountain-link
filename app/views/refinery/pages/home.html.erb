@@ -25,4 +25,40 @@
   </div>
 </div>
 
-<%= render '/refinery/content_page' %>
+<div class="space-30"></div>
+
+<div class="main">
+  <div class="container tim-container">
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <%= raw @page.content_for(:body) %>
+      </div>
+    </div>
+
+    <div class="space-30"></div>
+
+    <div class="row three-image-links text-center">
+      <div class="col-md-4">
+        <h4>Circle Image</h4>
+        <img src="assets/img/mockup.png" alt="Circle Image" class="img-circle">
+      </div>
+      <div class="col-md-4">
+        <h4>Circle Image</h4>
+        <img src="assets/img/mockup.png" alt="Circle Image" class="img-circle">
+      </div>
+      <div class="col-md-4">
+        <h4>Circle Image</h4>
+        <img src="assets/img/mockup.png" alt="Circle Image" class="img-circle">
+      </div>
+    </div>
+    
+    <div class="space"></div>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <%= raw @page.content_for(:side_body) %>
+      </div>
+    </div>
+  </div>
+</div>
