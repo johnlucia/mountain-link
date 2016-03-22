@@ -9,6 +9,10 @@ body{
 nav.navbar{ background:rgba(0,0,0,0.7); }
 
 
-// .three-image-links{
-//   text-align:center;
-// }
+.space.mobile-space{
+  display:none;
+}
+
+@media (max-width: 768px) {
+  .space.mobile-space{display:block;}
+}
