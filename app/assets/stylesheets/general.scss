@@ -1,8 +1,10 @@
 body{
   h1, h2{font-family: 'Cinzel', serif;}
   img{max-width:100%;}
-  .carousel-inner { text-align: center; }
-  .carousel .item > img { display: inline-block; }
+  
+  .carousel-inner > .item > img {
+    margin: 0 auto;
+  }
 }
 
 .three-image-links a{
