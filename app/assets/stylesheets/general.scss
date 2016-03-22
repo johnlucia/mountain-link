@@ -2,6 +2,9 @@ body{
   h1, h2{font-family: 'Cinzel', serif;}
   img{max-width:100%;}
 }
+
+body, #page_container, #page{width:100%; margin:0; padding:0; }
+
 .navbar-brand{
   margin-top: 0;
   margin-bottom: 0;
@@ -19,8 +22,6 @@ nav.navbar.navbar-transparent a.navbar-brand:hover{ background:none; }
 
 nav.navbar:not(.navbar-transparent).navbar-ct-red a.navbar-brand{ background:#000000; }
 nav.navbar:not(.navbar-transparent).navbar-ct-red{ background-color:#fd0326; }
-
-
 
 .space.mobile-space{
   display:none;
