@@ -5,7 +5,6 @@
     <%= render "/refinery/head" %>
   </head>
   <body id="<%= canonical_id @page %>">
-    <%#= site_bar -%>
     <div id="page_container">
       <header id="header">
         <%= render "/refinery/header" -%>
@@ -14,12 +13,11 @@
       <section id="page">
         <%= yield %>
       </section>
+      <div class="space"></div>
       <footer>
         <div class="row">
          <div class="col-md-12 text-center">
-            <div class="credits">
-              <%= render "/refinery/footer" -%>
-            </div>
+            <%= render "/refinery/footer" -%>
           </div>
         </div>
       </footer>
