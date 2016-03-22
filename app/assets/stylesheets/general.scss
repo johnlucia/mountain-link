@@ -2,7 +2,8 @@ body{
   h1, h2{font-family: 'Cinzel', serif;}
   img{max-width:100%;}
   #carousel,
-  .carousel-inner{margin-right:auto; margin-left:auto;}
+  .carousel-inner,
+  .carousel-inner .item{margin-right:auto; margin-left:auto;}
 }
 
 .three-image-links a{
