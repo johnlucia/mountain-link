@@ -2,6 +2,17 @@ body{
   h1, h2{font-family: 'Cinzel', serif;}
   img{max-width:100%;}
 }
+.navbar-brand{
+  margin-top: 0;
+  margin-bottom: 0;
+  background: #ffffff;
+}
+
+.navbar-transparent .navbar-brand {
+  position:relative;
+  top: -10px;
+  background:none;
+}
 
 .three-image-links a{
   color:#333333;
