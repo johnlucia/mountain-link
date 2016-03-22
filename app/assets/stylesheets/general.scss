@@ -11,8 +11,10 @@ nav.navbar{ background:rgba(0,0,0,0.7); }
 
 .space.mobile-space{
   display:none;
+  height: 85px;
 }
 
 @media (max-width: 768px) {
   .space.mobile-space{display:block;}
+  .carousel-indicators{display:none;}
 }
