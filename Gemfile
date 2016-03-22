@@ -12,6 +12,8 @@ gem 'dragonfly-s3_data_store'
 
 gem 'refinerycms-page-images', github: "refinery/refinerycms-page-images", branch: "master"
 
+gem 'rails_12factor', group: :production
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
