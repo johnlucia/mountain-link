@@ -4,22 +4,18 @@ html, body {
 }
 
 body{
-  // background:#ddd;
   h1, h2{font-family: 'Cinzel', serif;}
   img{max-width:100%;}
 }
 
-// body, #page_container, #page{width:100%; margin:0; padding:0; }
-
 .navbar-brand{
   margin-top: 0;
   margin-bottom: 0;
+  padding: 7px 15px;
   background: #ffffff;
 }
 
 .navbar-transparent .navbar-brand {
-  position:relative;
-  top: -10px;
   background:none;
 }
 
