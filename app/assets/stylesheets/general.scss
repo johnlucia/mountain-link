@@ -9,6 +9,8 @@ body{
 }
 
 .navbar-brand{
+  position:relative;
+  top:5px;
   margin-top: 0;
   margin-bottom: 0;
   padding: 7px 15px;
@@ -17,6 +19,7 @@ body{
 
 .navbar-transparent .navbar-brand {
   background:none;
+  top:0;
 }
 
 nav.navbar.navbar-transparent{ background:rgba(0,0,0,0.7); }
