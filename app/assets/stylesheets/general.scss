@@ -33,6 +33,8 @@ nav.navbar:not(.navbar-transparent).navbar-ct-red{ background-color:#fd0326; }
   height: 85px;
 }
 
+#carousel{ box-shadow: 0px 2px 5px #888888; }
+
 .three-image-links a{
   color:#333333;
   img{box-shadow: 3px 3px 5px #888888;}
@@ -47,6 +49,7 @@ nav.navbar:not(.navbar-transparent).navbar-ct-red{ background-color:#fd0326; }
 @media (max-width: 768px) {
   .space.mobile-space{display:block;}
   .carousel-indicators{display:none;}
+  nav.navbar.navbar-transparent{ background:#333333; }
   .navbar-transparent a.navbar-brand {
     height:50px;
     &:hover{ background:#000000; }
