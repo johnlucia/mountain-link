@@ -1,3 +1,5 @@
+$mtn-link-red: #fd0326;
+
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -45,6 +47,30 @@ nav.navbar:not(.navbar-transparent).navbar-ct-red{ background:rgba(0,0,0,0.7); }
   margin:15px auto;
   border-radius: 3px;
 }
+
+.btn.btn-primary.btn-fill.btn-mt-link-red{
+  background-color: $mtn-link-red;
+  border-color: $mtn-link-red;
+  box-shadow: 2px 2px 4px #888888;
+  &:hover{
+    background-color:darken( $mtn-link-red, 5% );
+    border-color:darken( $mtn-link-red, 5% );
+  } 
+}
+
+.contact{
+  text-align: center;
+  .btn-primary.btn-fill{
+    display: block;
+    width:60%;
+    margin:1em auto;
+  }
+}
+
+.inquiries{
+  textarea{ width:300px; height:150px; }
+}
+
 @media (max-width: 768px) {
   .space.mobile-space{display:block;}
   .carousel-indicators{display:none;}

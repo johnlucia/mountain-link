@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'dragonfly-s3_data_store'
 
 gem 'refinerycms-page-images', github: "refinery/refinerycms-page-images", branch: "master"
+gem 'refinerycms-inquiries', '~> 3.0.0'
 
 gem 'rails_12factor', group: :production
 
