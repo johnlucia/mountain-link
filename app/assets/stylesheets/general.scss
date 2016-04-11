@@ -67,6 +67,12 @@ nav.navbar:not(.navbar-transparent).navbar-ct-red{ background:rgba(0,0,0,0.7); }
   }
 }
 
+@media (max-width: 400px) {
+  .contact{
+    .btn-primary.btn-fill{ width:90%; }
+  }
+}
+
 .inquiries{
   textarea{ width:300px; height:150px; }
 }
