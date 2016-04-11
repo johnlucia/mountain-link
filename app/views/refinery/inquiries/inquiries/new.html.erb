@@ -10,10 +10,13 @@
     <div class="row">
       <div class="col-md-7">
         <%= raw @page.content_for(:body) %>
+
+        <div class='inquiries'>
+          <%= render "/refinery/inquiries/inquiries/form", inquiry: @inquiry %>
+        </div>
       </div>
       <div class="col-md-5">
         <%= raw @page.content_for(:side_body) %>
-        <%= render '/refinery/contact' %>
       </div>
     </div>
   </div>
