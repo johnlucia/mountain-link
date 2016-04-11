@@ -38,14 +38,19 @@ nav.navbar:not(.navbar-transparent).navbar-ct-red{ background:rgba(0,0,0,0.7); }
 
 .three-image-links a{
   color:#333333;
-  img{box-shadow: 3px 3px 5px #888888;}
+  img{box-shadow: 3px 3px 5px #888888; margin-bottom:2em; }
   &:hover img{box-shadow: 3px 3px 6px #444444;}
+  margin-bottom:1em;
 }
 
 .internal-page-content img{
   display:block;
   margin:15px auto;
   border-radius: 3px;
+}
+
+.side-content{
+  img{ box-shadow: 2px 2px 4px #888888; border:1px solid #bbbbbb; }
 }
 
 .btn.btn-primary.btn-fill.btn-mt-link-red{
