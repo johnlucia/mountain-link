@@ -3,3 +3,5 @@ $ ->
     link = $(this).attr('href')
     text = $(this).text()
     $(this).next().prepend("<li><a href='#{link}'>#{text}</a></li>")
+
+  $("#page").fitVids();
