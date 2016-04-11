@@ -98,3 +98,6 @@ vendor/extensions/**/spec/dummy
 # dotenv-rails
 .env
 .env.*
+
+config/database.yml
+
