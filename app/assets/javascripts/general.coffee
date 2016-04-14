@@ -4,4 +4,4 @@ $ ->
     text = $(this).text()
     $(this).next().prepend("<li><a href='#{link}'>#{text}</a></li>")
 
-  $("#page").fitVids();
+  $("#page").fitVids() unless $('html.ie9').length
